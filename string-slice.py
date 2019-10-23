@@ -25,3 +25,9 @@ print(s[::3])
 
 # reverse string w pythonie
 print(s[::-1])
+
+# Łączenie napisów
+print("Hello " + "World")
+a="Hello"
+b="ALX"
+print(f"{a} {b}")
