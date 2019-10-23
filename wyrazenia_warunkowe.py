@@ -51,3 +51,11 @@ elif x>90:
     else:
         s = "PGR"
 print(s)
+
+
+# sekwencja git:
+# git status
+# git add .
+# git commit -m "Wszystko commit"
+# git push origin master
+
