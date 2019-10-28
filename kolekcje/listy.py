@@ -43,6 +43,10 @@ print(x.index(2))
 # test czy coś zawiera się w liście albo tupli
 print(100 in x) #  "False lub True"
 
+# kluczem moze byc wszystko co jest hashowalne, czyli np lista nie moze byc ale tupla moze byc
+#liczby, napisy, tuple,
+
+
 
 
 
