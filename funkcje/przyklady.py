@@ -22,3 +22,20 @@ def na_duze_litery(napis):
     return x
 
 print(na_duze_litery("Ale ma kota!"))
+
+# moze byc wiele return'ow; ale funkcja sie konczy po napotkaniu pierwszego return
+
+def do_potegi(podstawa, wykladnik):
+    return podstawa**wykladnik
+
+print(do_potegi(2,16))
+
+# mozna tez zwracac wiecej, niz 1 element
+# wtedy w wyniku dostajemy tuplę
+def unique_letters(tekst):
+    u_letters = set(tekst)
+    u_letters = "".join(u_letters)
+    return u_letters, len(tekst)
+
+
+print(unique_letters("ala ma kota"))
