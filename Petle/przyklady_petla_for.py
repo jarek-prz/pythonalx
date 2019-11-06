@@ -31,4 +31,4 @@ print(list(range(10)))
 print(set(range(10)))
 print(tuple(range(10)))
 
-print(range(10,20,2))
+print(range(10,20,1))

@@ -1,2 +1,4 @@
 .idea
 wazne_hasla.txt
+venv
+__pycache__
