@@ -4,3 +4,14 @@
 # git commit -m "Wszystko commit"
 # git push origin master
 add .
+
+
+
+test pytest:
+
+1. napisac funkcję , np
+def test_lata_przestepne():
+    assert (lata_przestepne(2020,2030) == [2020,2024, 2028]) is True
+
+2. w terminalu przejśc do testowanego pliku , wpisac pytest i nazwa pliku i ENTER
+C:\Users\kurs\PycharmProjects\test\funkcje>pytest Lata_przestepne.py
