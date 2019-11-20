@@ -18,3 +18,8 @@ def fun_sort(x):
 print(sorted(lista, key=fun_sort))
 print(sorted(lista, key=lambda x:x[1]))
 
+
+
+
+
+
