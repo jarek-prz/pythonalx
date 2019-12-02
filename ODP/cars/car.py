@@ -18,7 +18,7 @@ class ElectricCar:
 
     def charge (self):
         self.__max_range = self.__initial_max_range
-        return self.self.__max_range
+        return self.__max_range
 
 
 

@@ -16,7 +16,7 @@ class TestElectricCar:
         assert c.drive(70) ==70
         assert c.drive(50) == 30
         assert c.drive(30) == 0
-        #c.charge()
-        #assert c.range() == 100
+        c.charge()
+        assert c.range() == 100
 
 
