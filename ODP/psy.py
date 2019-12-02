@@ -1,12 +1,22 @@
 
 # definicja klasy
 class Pies:
+
+    gatunek="Burek"
+    ile=0
+
     def __init__(self, imie, waga):
         self.imie = imie
         self.waga = waga
+        Pies.ile +=1
 
     def szczekaj(self):
         print(f"{self.imie} szczeka")
+
+    @classmethod
+    def incr(cls):
+        print(f"{self.imie}")
+
     pass
 
 

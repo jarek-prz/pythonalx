@@ -1,6 +1,6 @@
 '''
 otworz plik
-czytaj login
+czytaj logi
 
 python czytaj_logi.py logs.txt
 
@@ -12,8 +12,8 @@ python czytaj_logi.py logs.txt
 
 import sys
 
-plik = sys.argv[1]
-#plik = "dane/logs.txt"
+#plik = sys.argv[1]
+plik = "dane/logs.txt"
 # 1 czytanie pliku
 
 # lista logow plus_minus
