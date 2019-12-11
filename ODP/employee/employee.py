@@ -18,3 +18,17 @@ class Employee:
         return to_pay
 
 # __registered_hours jest prywatny - 2 podkreślenia
+
+class Premium_employee(Employee):
+    def __init__(self, f_name, l_name, rph):
+        super().init(f_name, l_name, rph)
+        self.bonuses=[]
+
+    def give_bonus(self, bonus):
+        self.bonuses.append(bonus)
+
+    def pay_salary(self):
+        s=super().pay_salary() + self.bonus
+        self.bonus=0
+        return s
+
