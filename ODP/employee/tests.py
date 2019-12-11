@@ -1,4 +1,4 @@
-from ODP.employee.employee import Employee
+from ODP.employee.employee import Employee, AmountBonus, PercentBonus
 from ODP.employee.employee import Premium_employee
 
 
@@ -43,11 +43,17 @@ class TestEmployee:
         e.register_time(5)
         assert e.registered_hours == 5
 
-    def test_give_bonus_to_premium_employee(self):
+    def test_give_amount_bonus_to_premium_employee(self):
         e = Premium_employee("Jan", "Nowak", 100)
-        e.give_bonus(1000)
-        e.give_bonus(2000)
-        assert e.bonuses == [1000, 2000]
+        self.bonus = AmountBonus(1000)
+        e.give_bonus(self.bonus)
+        assert e.bonuses == [self.bonus]
+
+    def test_give_percent_bonus_to_premium_employee(self):
+        e = Premium_employee("Jan", "Nowak", 100)
+        self.bonus = PercentBonus(10)
+        e.give_bonus(self.bonus)
+        assert e.bonuses == [self.bonus]
 
     def test_pay_salary_normal_hours_plus_bonus(self):
         e = Employee("Jan", "Nowak", 100)

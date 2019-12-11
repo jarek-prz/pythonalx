@@ -19,6 +19,16 @@ class Employee:
 
 # __registered_hours jest prywatny - 2 podkreślenia
 
+class Bonus:
+    def __init__(self, value):
+        self.value = value
+
+class AmountBonus (Bonus):
+    pass
+
+class PercentBonus (Bonus):
+    pass
+
 class Premium_employee(Employee):
     def __init__(self, f_name, l_name, rph):
         super().init(f_name, l_name, rph)
@@ -29,6 +39,15 @@ class Premium_employee(Employee):
 
     def pay_salary(self):
         s=super().pay_salary() + self.bonus
-        self.bonus=0
-        return s
+        to_pay = super().pay_salary()
+        amount_bonuses = sum([x.value for x in self.bonuses if isinstance(x, AmountBonus)])
+        percent_bonuses = sum([x.value for x in self.bonuses if isinstance(x, PercentBonus)])
+        to_pay = to_pay + (to_pay * percent_bonuses ) / 100
+        amount_bonuses=[]
+        percent_bonuses=[]
+        return to_pay
+
+
+
+
 
