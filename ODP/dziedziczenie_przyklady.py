@@ -1,3 +1,9 @@
+'''
+
+test
+'''
+
+
 class Animal:
     def __init__(self, name):
         self.name=name
@@ -39,4 +45,7 @@ print(a.move(5000))
 
 azor = Dog("Azor")
 print(azor.bark())
+
+def test():
+    assert 1+1==2
 
