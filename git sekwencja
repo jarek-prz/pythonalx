@@ -15,3 +15,5 @@ def test_lata_przestepne():
 
 2. w terminalu przejśc do testowanego pliku , wpisac pytest i nazwa pliku i ENTER
 C:\Users\kurs\PycharmProjects\test\funkcje>pytest Lata_przestepne.py
+
+
