@@ -1,0 +1,27 @@
+# notatki do ipytyhon
+from polls.models import Question, Choice
+Question??
+from django.utils import timezone
+timezone.now() # z podaniem strefy czsowej
+datetime.datetime.now() # lokalny czas bez strefy czasowej
+q=Question()
+question_name
+q.save()
+Question.objects.first()
+Question.objects.get(id=2)
+str(Question.objects.filter(id=2).query)
+Question.objects.filter(question_text__contains="Grun")
+Question.objects.filter(question_text__startswith="Grun")
+exit()
+
+
+djangoproject tutorial
+
+pythonprinciples.com/challenges
+
+
+
+
+
+
+
